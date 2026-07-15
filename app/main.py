@@ -1,6 +1,7 @@
+from fastapi import FastAPI
 from pathlib import Path
 
-from fastapi import FastAPI
+
 from fastapi.staticfiles import StaticFiles
 
 from app.database.database import Base, engine
