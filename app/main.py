@@ -1,4 +1,3 @@
-import streamlit as st
 from pathlib import Path
 
 from fastapi import FastAPI
@@ -29,6 +28,6 @@ app.include_router(dashboard.router)
 app.include_router(analytics.router)
 
 
-@app.get("/", include_in_schema=False)
+@app.get("/")
 async def root():
     return RedirectResponse(url="/dashboard/")
