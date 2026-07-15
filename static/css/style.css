@@ -1,0 +1,313 @@
+/* ==========================================================
+   Transaction Anomaly Dashboard
+========================================================== */
+
+:root{
+    --primary:#2563eb;
+    --success:#16a34a;
+    --danger:#dc2626;
+    --warning:#f59e0b;
+
+    --background:#f4f7fb;
+
+    --card:#ffffff;
+
+    --text:#1f2937;
+
+    --muted:#6b7280;
+
+    --border:#e5e7eb;
+}
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    padding: 12px 24px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* ================= HEADINGS ================= */
+
+h2{
+
+    font-weight:700;
+
+}
+
+.text-muted{
+
+    color:var(--muted)!important;
+
+}
+
+/* ================= CARDS ================= */
+
+.dashboard-card{
+
+    border-radius:18px;
+
+    transition:.30s;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.08);
+
+}
+
+/* Colored Top Border */
+
+.dashboard-card:nth-child(1){
+
+    border-top:5px solid var(--primary);
+
+}
+
+.dashboard-card:nth-child(2){
+
+    border-top:5px solid var(--success);
+
+}
+
+.dashboard-card:nth-child(3){
+
+    border-top:5px solid var(--danger);
+
+}
+
+.dashboard-card:nth-child(4){
+
+    border-top:5px solid var(--warning);
+
+}
+
+/* Card Body */
+
+.dashboard-card .card-body{
+
+    padding:28px;
+
+}
+
+.dashboard-card h6{
+
+    color:var(--muted);
+
+    font-size:15px;
+
+    margin-top:10px;
+
+}
+
+.dashboard-card h2{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    margin-top:8px;
+
+}
+
+.card-icon{
+
+    font-size:32px;
+
+}
+
+/* ================= NORMAL CARDS ================= */
+
+.card{
+
+    border:none;
+
+    border-radius:18px;
+
+}
+
+.card-header{
+
+    background:#fff;
+
+    border-bottom:1px solid var(--border);
+
+    font-weight:600;
+
+    padding:18px;
+
+}
+
+/* ================= CHART ================= */
+
+canvas{
+
+    width:100%!important;
+
+    height:330px!important;
+
+}
+
+/* ================= TABLE ================= */
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead{
+
+    background:#f8fafc;
+
+}
+
+.table th{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#555;
+
+    border:none;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+    border-top:1px solid #f0f0f0;
+
+    font-size:14px;
+
+}
+
+/* Hover */
+
+.table tbody tr{
+
+    transition:.20s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f7fbff;
+
+}
+
+/* ================= BADGES ================= */
+
+.badge{
+
+    font-size:12px;
+
+    padding:8px 10px;
+
+    border-radius:50px;
+
+}
+
+/* ================= TABLE CARD ================= */
+
+.table-responsive{
+
+    border-radius:0 0 18px 18px;
+
+}
+
+/* ================= CHART CARD ================= */
+
+.card-body{
+
+    padding:25px;
+
+}
+
+/* ================= SPACING ================= */
+
+.mb-4{
+
+    margin-bottom:1.7rem!important;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+.dashboard-card h2{
+
+    font-size:30px;
+
+}
+
+canvas{
+
+    height:280px!important;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar-brand{
+
+    font-size:18px;
+
+}
+
+.dashboard-card{
+
+    margin-bottom:15px;
+
+}
+
+.dashboard-card h2{
+
+    font-size:28px;
+
+}
+
+canvas{
+
+    height:250px!important;
+
+}
+
+.table{
+
+    font-size:13px;
+
+}
+
+}
